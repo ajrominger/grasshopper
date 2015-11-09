@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\geometry{letterpaper}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage[numbers]{natbib}
+\usepackage{authblk}
+
+\title{The grasshopper model: Ecological dynamics far from absorbing states}
+
+\author{A. J. Rominger}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{The problem}
+
+How can there be so much grass and so many grasshoppers? Resource
+competition models day that resources are limiting to reproduction:
+\begin{equation}
+  \label{eq:lotka}
+  \frac{dN}{dt} = r(1 - N/K)
+\end{equation}
+
+What is the meaning of $K$?
+\begin{enumerate}
+\item $K = \epsilon R$ where $\epsilon$ is the efficiency of an
+  organism in turning resource $R$ into offspring; this implies
+  entirety of resource is used up before $dN/dt$ is negative.
+\item $K = \epsilon \rho R$ where $\epsilon$ is as before and $\rho$
+  is the proportion of the biomass of $R$ available to the metabolism
+  of the organisms.
+\item $K = \epsilon \rho R$ where $\epsilon$ is as before and $\rho$
+  is now interpreted as the probability of discovering a packet of
+  available resource.
+\end{enumerate}
+
+Problems with these interpretations (at least in the case of grass and
+grasshoppers):
+\begin{enumerate}
+\item Resources are abundant
+\item All above ground biomass is available to metabolism yet we
+  observe these resources are not depleted
+\item Resources are easy to find
+\end{enumerate}
+
+This implies grasshoppers are far from resource constraints and thus
+far from absorbing states (resources depleted and all grasshoppers
+extinct). Yet the system is ``stable,'' i.e. there are no local
+extirpations of grass or grasshoppers though of course there are
+fluctuations in the total biomass of both.  This suggests we need a
+new model.
+
+\section{Basics of the grasshopper model}
+
+\begin{enumerate}
+\item Death from predation, disease, old age (but \emph{not}
+  starvation) are more important than resource limitation
+\item satiation means per capita reproductive rate does not increase
+  indefinitely w.r.t. resources
+\item per capita death rate should be constant w.r.t. resources except
+  in extreme case of near starvation conditions
+\item predation should include density dependence because pray are
+  harder to find when rare
+\item in the extreme case where there's almost no resource then
+  density dependence should hold for the primary consumers as well,
+  i.e. there should be a term (a probability) s.t. $d^2N/dt^2$ is
+  negative for very low resource levels or very low probabilities of
+  resource discovery
+\end{enumerate}
+
+\section{Speciation when resources aren't limiting}
+
+\begin{enumerate}
+\item occurs from dispersal limitation and geographic isolation
+\item occurs from strong selection on ways to avoid predation/disease
+\item occurs from sexual/social mechanisms
+\end{enumerate}
+
+Note: all these speciation mechanisms are true for the very polyfagus
+grasshoppers along with rare cases of host switching discussed below
+
+\section{Speciation by resource switching when resources aren't
+  limiting}
+
+The height of fitness peak is set by metabolic rate of species, not by
+amount of resource. Therefore the height of the peak is not relevant to
+selecting, rather the gradient of the peak is.
+
+Host switching when resources are not limiting should thus be rare(?)
+as is observed in grasshoppers.
+
+Note that if resources are patchy and organisms are dispersal limited
+then locally we should see density dependence and apparent resource
+competition thus opening up the classic selective mechanisms leading
+to speciation by host switching.  The question is: do all clades that
+speciate by host switching specialize on rare hosts.  The answer of
+course is no.  And in fact these clades would have selective pressure
+to eventually switch to common hosts.  Thus it seems more likely that
+such clades have metabolic pathways that require them to specialize,
+i.e. they have not discovered how to be generalists.  Thus if they
+specialize and switch hosts and in the process speciate it is not
+necessary (although it is sufficient) for the host to be rare.  There
+is the other mechanism that they are constrained to specialize.
+Therefore, do these clades climb fitness peaks based the gradient of
+the peak as in the case of grasshoppers, and if so what is the
+consequence for the predicted rate of speciation if resources are not
+limited by specialization is metabolically required?
+
+\end{document}
+
+
+
